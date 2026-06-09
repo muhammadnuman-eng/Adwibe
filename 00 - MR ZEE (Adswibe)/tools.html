@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>40+ Free Marketing Tools — Adswibe® Social Media Agency</title>
+    <link rel="icon" href="images/icon.webp" type="image/webp" sizes="32x32">
+    <link rel="shortcut icon" href="images/icon.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="images/icon2.webp">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="40+ free marketing tools: ROAS calculator, engagement checker, CPC estimator, audience reach analyzer & more. No signup required.">
+    <meta property="og:title" content="Free Marketing Tools — Adswibe®">
+    <meta property="og:description" content="40+ free social media marketing calculators & tools. ROAS, engagement rate, CPC, budget planner & more.">
+    <meta property="og:image" content="https://adswibe.com/images/og-image.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://adswibe.com/tools.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Adswibe®">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@adswibe">
+    <meta name="twitter:creator" content="@adswibe">
+    <meta name="twitter:title" content="40+ Free Marketing Tools — Adswibe®">
+    <meta name="twitter:description" content="40+ free social media marketing calculators & tools. ROAS, engagement rate, CPC, budget planner & more.">
+    <meta name="twitter:image" content="https://adswibe.com/images/og-image.webp">
+    <meta name="keywords" content="free marketing tools, ROAS calculator, social media engagement checker, CPC estimator, marketing budget calculator, smma tools, adswibe tools">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://adswibe.com/request.html">
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="css/enhancements.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <style>
+        html { scroll-behavior: smooth; }
+        header.scrolled-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.12)!important; }
+
+        :root {
+            --blue: #4786EE;
+            --blue-dark: #0f5fd1;
+            --blue-light: #42a5f5;
+            --orange: #FF835F;
+            --dark: #1a1a2e;
+            --form-bg: #EEF4FD;
+            --form-border: #d0e0f7;
+            --green: #28a745;
+            --purple: #6f42c1;
+            --teal: #20c997;
+        }
+
+        .tool-card {
+            background: #fafcff;
+            border: 1.5px solid #c5d5ea;
+            border-radius: 20px;
+            padding: 22px 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(71,134,238,0.10);
+            border-color: var(--blue);
+            background: #fff;
+        }
+        .tool-card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            border-bottom: 1px dashed var(--form-border);
+            padding-bottom: 14px;
+        }
+        .tool-card-header i {
+            font-size: 26px;
+            color: var(--orange);
+            background: rgba(255,131,95,0.1);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+        }
+        .tool-card-header h5 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        .tool-card-body { flex: 1; }
+        .ts-label { font-size: 11.5px; color: #667; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.3px; font-weight: 600; }
+        .ts-val { font-size: 22px; font-weight: 700; color: var(--blue); line-height: 1.1; }
+        .ts-val.orange { color: var(--orange); }
+        .ts-val.green { color: var(--green); }
+        .ts-val.purple { color: var(--purple); }
+        .ts-slider { width: 100%; accent-color: var(--blue); cursor: pointer; margin: 6px 0; height: 6px; }
+        .ts-bar-wrap { height: 8px; background: #e0eaf8; border-radius: 4px; overflow: hidden; margin-top: 4px; }
+        .ts-bar { height: 100%; border-radius: 4px; transition: width 0.4s, background 0.4s; }
+        .ts-tag { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 2px 9px; border-radius: 20px; margin-top: 5px; }
+        .tag-low  { background: #d4edda; color: #155724; }
+        .tag-med  { background: #fff3cd; color: #856404; }
+        .tag-high { background: #f8d7da; color: #721c24; }
+        .form-control, select, textarea {
+            border: 1.5px solid var(--form-border);
+            border-radius: 12px;
+            padding: 12px 16px;
+            transition: all 0.3s;
+            background: #fff;
+            font-size: 13px;
+        }
+        .form-control:focus, select:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(71,134,238,0.1); outline: none; }
+        header, header * { z-index: 100000 !important; }
+        #cursor-dot { z-index: 2147483647 !important; pointer-events: none !important; }
+#cursor-ring { z-index: 2147483646 !important; pointer-events: none !important; }
+        .nav-or-sep { color: #888; font-weight: 600; font-size: 13px; margin: 0 5px; white-space: nowrap; display: inline-flex; align-items: center; }
+        .menu_side_area { display: inline-flex !important; align-items: center !important; gap: 4px !important; flex-wrap: nowrap !important; }
+        .btn-main { background: linear-gradient(135deg, var(--blue), var(--blue-light)); border: none; transition: transform 0.3s, box-shadow 0.3s; color: white; padding: 10px 24px; border-radius: 40px; font-weight: 600; }
+        .btn-main:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(71,134,238,0.35); }
+        .btn-sm { padding: 6px 14px; font-size: 12px; border-radius: 20px; font-weight: 600; transition: all 0.3s; }
+        .btn-outline-primary { border: 2px solid var(--blue); color: var(--blue); background: transparent; }
+        .btn-outline-primary:hover { background: var(--blue); color: white; }
+        
+        /* ✅ FIXED CTA BANNER - Edge to Edge + Blue/Orange Theme */
+        .cta-banner-wrapper {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            margin-top: 80px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+        .cta-banner {
+            background: linear-gradient(135deg, var(--blue) 0%, var(--orange) 100%);
+            padding: 70px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        .cta-banner h2 {
+            color: white;
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        .cta-banner p {
+            color: rgba(255,255,255,0.95);
+            font-size: 18px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-banner .btn-white {
+            background: white;
+            color: var(--blue);
+            padding: 16px 45px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 17px;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            transition: all 0.3s;
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .cta-banner .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            background: #f8f9fa;
+        }
+        .cta-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+        .cta-stat {
+            text-align: center;
+        }
+        .cta-stat-number {
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            display: block;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .cta-stat-label {
+            font-size: 14px;
+            color: rgba(255,255,255,0.9);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .cta-banner h2 { font-size: 28px; }
+            .cta-banner p { font-size: 16px; }
+            .cta-stats { flex-direction: column; gap: 25px; }
+            .cta-stat-number { font-size: 32px; }
+        }
+    </style>
+<style>
+/* ── ADSWIBE PAGE INIT ── */
+html { scroll-behavior: smooth; }
+header.scrolled-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important; }
+/* Header z-index: high, but service modal overrides with body.modal-open */
+header { z-index: 10000 !important; }
+header * { z-index: auto !important; }
+/* Cursor hidden */
+/* cursor: see enhancements.css */
+/* Jarallax safe stacking */
+section.jarallax { z-index: auto !important; }
+.jarallax-img { z-index: -1 !important; }
+/* Active nav */
+a.menu-item.active { opacity: 0.65; font-weight: 700; }
+/* Nav flex */
+.menu_side_area { display: inline-flex !important; align-items: center !important; gap: 4px !important; flex-wrap: nowrap !important; }
+.nav-or-sep { color: #888; font-weight: 600; font-size: 13px; margin: 0 5px; white-space: nowrap; display: inline-flex; align-items: center; }
+</style>
+    <!-- GTM — Replace GTM-W66NWM5C with your real ID -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W66NWM5C');</script>
+    <!-- Meta Pixel — Replace 964079973065268 -->
+    <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','964079973065268');fbq('track','PageView');</script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=964079973065268&ev=PageView&noscript=1"/></noscript>
+    <!-- TikTok Pixel — Replace D82N0J3C77U77GE80K2G -->
+    <script>!function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};ttq.load('D82N0J3C77U77GE80K2G');ttq.page()}(window,document,'ttq');</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W66NWM5C" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="wrapper">
+    <div id="de-loader"></div>
+
+    <header class="transparent header-light header-float">
+        <div class="container-float"><div class="row"><div class="col-md-12">
+            <div class="header-inner"><div class="de-flex sm-pt10">
+                <div class="de-flex-col"><div id="logo"><a href="index.html">
+                    <img class="logo-main" src="images/logo.webp" alt="Adswibe®">
+                    <img class="logo-scroll" src="images/logo.webp" alt="Adswibe®">
+                    <img class="logo-mobile" src="images/logo.webp" alt="Adswibe®">
+                </a></div></div>
+                <div class="de-flex-col header-col-mid"><ul id="mainmenu">
+                    <li><a class="menu-item" href="services.html">Our Services</a></li>
+                    <li><a class="menu-item" href="clients.html">Our Clients</a></li>
+                    <li><a class="menu-item" href="index.html#section-why">Why Adswibe®</a></li>
+                    <li><a class="menu-item" href="index.html#section-reviews">Reviews</a></li>
+                    <li><a class="menu-item" href="index.html#section-faqs">FAQs</a></li>
+                    <li><a class="menu-item" href="tools.html">Free Tools</a></li>
+                </ul></div>
+                <div class="de-flex-col"><div class="menu_side_area">
+                    <a class="btn-main" href="request.html">Get Free Proposal</a>
+                    <span class="nav-or-sep">OR</span>
+                    <a class="btn-main btn-chatnow" href="https://wa.me/923316290097?text=I%20want%20digital%20marketing%20services" target="_blank" rel="noopener">WhatsApp now</a>
+                    <span id="menu-btn"></span>
+                </div></div>
+            </div></div>
+        </div></div></div>
+    </header>
+
+    <div class="no-bottom no-top" id="content">
+        <section id="subheader" class="jarallax relative">
+            <img src="images/background/2.webp" class="jarallax-img" alt="Adswibe®">
+            <div class="container relative z-2">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-8">
+                        <div class="subtitle s2 wow fadeInUp mb-2" style="color:var(--orange); font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Free Professional Tools</div>
+                        <h1 class="wow fadeInUp" data-wow-delay=".2s" style="font-size: 48px; font-weight: 800; margin-bottom: 15px;">40+ Smart Marketing <span style="color:var(--orange)">Calculators</span></h1>
+                        <p class="wow fadeInUp" data-wow-delay=".4s" style="font-size: 18px; color: #667; max-width: 700px;">Professional-grade marketing tools used by 10,000+ agencies worldwide. Calculate ROI, estimate budgets, analyze engagement & more — completely free, no signup required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 60px 0;">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="wow fadeInUp" style="font-size: 36px; font-weight: 800; margin-bottom: 15px;">Complete Marketing <span style="color:var(--orange)">Toolkit</span></h2>
+                    <p class="wow fadeInUp" data-wow-delay=".2s" style="color:#667; max-width:700px; margin:0 auto; font-size: 16px;">Every tool you need to plan, execute, and optimize your social media campaigns. All calculators are real-time and based on industry data.</p>
+                </div>
+
+                <div class="row g-4">
+                    
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 1: Smart ROI Estimator -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-chart-line"></i>
+                                <h5>Smart ROI Estimator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="mb-3">
+                                    <div class="ts-label">Monthly Ad Spend</div>
+                                    <input type="range" id="budgetRangeTool" class="ts-slider" min="500" max="50000" step="500" value="5000">
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <span style="font-size:11px; color:#667;">$500</span>
+                                        <span id="budgetAmountTool" style="font-weight:700; color:var(--orange); font-size: 14px;">$5,000</span>
+                                        <span style="font-size:11px; color:#667;">$50,000</span>
+                                    </div>
+                                </div>
+                                <div class="row g-3 text-center mt-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Est. Monthly Revenue</div>
+                                        <div class="ts-val orange" id="estRevenueTool">$20,000</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Projected ROAS</div>
+                                        <div class="ts-val" id="estRoasTool" style="color:var(--dark)">4.0x</div>
+                                    </div>
+                                </div>
+                                <div style="font-size:11px; color:#667; margin-top:15px; text-align:center; border-top:1px dashed #ddd; padding-top:12px;">
+                                    <i class="fas fa-calculator" style="margin-right:5px;"></i> Based on e-commerce benchmarks
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 2: Engagement Rate Checker -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-heart"></i>
+                                <h5>Engagement Rate Checker</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="mb-3">
+                                    <div class="ts-label">Platform</div>
+                                    <select id="engPlatform" class="form-control">
+                                        <option value="ig">📷 Instagram</option>
+                                        <option value="fb">👥 Facebook</option>
+                                        <option value="tt">🎵 TikTok</option>
+                                        <option value="yt">▶️ YouTube</option>
+                                        <option value="li">💼 LinkedIn</option>
+                                        <option value="x">✖️ X (Twitter)</option>
+                                    </select>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="ts-label">Followers</div>
+                                        <input type="number" id="engFollowers" class="form-control" value="10000" min="100" step="100">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Likes + Comments</div>
+                                        <input type="number" id="engInteractions" class="form-control" value="450" min="0" step="10">
+                                    </div>
+                                </div>
+                                <div style="margin-top:15px; text-align:center;">
+                                    <div class="ts-label">Engagement Rate</div>
+                                    <div style="font-size:32px; font-weight:800;" id="engRateValue"><span style="color:var(--blue);">4.5</span><span style="font-size:16px;color:#667;">%</span></div>
+                                    <div style="margin-top:8px;">
+                                        <span class="ts-tag" id="engRateTag" style="background:#d4edda;color:#155724;">Excellent ★</span>
+                                    </div>
+                                </div>
+                                <div style="font-size:9.5px;color:#667;margin-top:12px;text-align:center">Good: 1-3% | Excellent: 3.5%+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 3: CPC & Budget Calculator -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-dollar-sign"></i>
+                                <h5>CPC & Budget Calculator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Industry</div>
+                                        <select id="cpcIndustry" class="form-control">
+                                            <option value="1.50">E-commerce</option>
+                                            <option value="2.50">Fashion</option>
+                                            <option value="3.20">Beauty</option>
+                                            <option value="4.80">Legal</option>
+                                            <option value="3.50">Insurance</option>
+                                            <option value="2.80">Real Estate</option>
+                                            <option value="1.20">Entertainment</option>
+                                            <option value="2.00">Health</option>
+                                            <option value="5.50">Finance</option>
+                                            <option value="3.00">Education</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Daily Budget</div>
+                                        <input type="number" id="cpcBudget" class="form-control" value="50" min="5" max="5000" step="5">
+                                    </div>
+                                </div>
+                                <div class="ts-bar-wrap" style="margin:15px 0; height:10px;">
+                                    <div class="ts-bar" id="cpcBar" style="width:60%;background:linear-gradient(90deg,var(--blue),var(--orange))"></div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="ts-label">Avg. CPC</div>
+                                        <div class="ts-val" id="cpcValue" style="font-size:18px;">$2.50</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="ts-label">Daily Clicks</div>
+                                        <div class="ts-val" id="cpcClicks" style="font-size:18px;">20</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="ts-label">Est. Leads</div>
+                                        <div class="ts-val orange" id="cpcLeads" style="font-size:18px;">0.6</div>
+                                    </div>
+                                </div>
+                                <div style="font-size:9.5px;color:#667;margin-top:10px;text-align:center">*3% avg. conversion rate</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 4: Audience Reach Estimator -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-users"></i>
+                                <h5>Audience Reach Estimator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Age Group</div>
+                                        <select id="audAgeTool" class="form-control">
+                                            <option>13–17</option>
+                                            <option>18–24</option>
+                                            <option selected>25–34</option>
+                                            <option>35–44</option>
+                                            <option>45–54</option>
+                                            <option>55–64</option>
+                                            <option>65+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Location</div>
+                                        <select id="audLocTool" class="form-control">
+                                            <option value="Global">🌍 Global</option>
+                                            <option value="United States">🇺🇸 USA</option>
+                                            <option value="Pakistan" selected>🇵🇰 Pakistan</option>
+                                            <option value="India">🇮🇳 India</option>
+                                            <option value="United Kingdom">🇬🇧 UK</option>
+                                            <option value="Canada">🇨🇦 Canada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-center mt-2">
+                                    <div>
+                                        <div class="ts-val" id="audSizeTool">58.0M</div>
+                                        <div class="ts-label">Est. Reach</div>
+                                    </div>
+                                    <div style="flex:1">
+                                        <div class="ts-label">Competition</div>
+                                        <div class="ts-bar-wrap">
+                                            <div class="ts-bar" id="compBarTool" style="width:70%;background:linear-gradient(90deg,#FF835F,#ffb347)"></div>
+                                        </div>
+                                        <div><span class="ts-tag tag-med" id="compTagTool">Medium</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 5: ROAS Calculator -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-chart-pie"></i>
+                                <h5>ROAS Calculator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Ad Spend ($)</div>
+                                        <input type="number" id="roasSpend" class="form-control" value="1000" step="100">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Revenue ($)</div>
+                                        <input type="number" id="roasRevenue" class="form-control" value="4500" step="100">
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <div class="ts-label">Your ROAS</div>
+                                    <div style="font-size:48px; font-weight:800; color: var(--blue);" id="roasResult">4.5<span style="font-size:18px;">x</span></div>
+                                    <span class="ts-tag" id="roasTag" style="background:#d4edda;color:#155724;">🚀 Profitable</span>
+                                </div>
+                                <div style="font-size:9.5px;color:#667;margin-top:10px;text-align:center;">Target: >4x (Ecom) | >2x (Lead Gen)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 6: Platform Budget Splitter -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-pie-chart"></i>
+                                <h5>Platform Budget Splitter</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="ts-label" style="margin-bottom:6px">Monthly Budget: <strong id="splitBudgetLabelTool" style="color: var(--orange);">$5,000</strong></div>
+                                <input type="range" id="splitSliderTool" class="ts-slider" min="500" max="30000" step="500" value="5000">
+                                <div style="margin-top:15px">
+                                    <div class="d-flex justify-content-between align-items-center mb-2" style="font-size:12px;">
+                                        <span style="color:#1877F2; font-weight: 600;"><i class="fab fa-facebook-f"></i> Meta</span>
+                                        <div style="flex:1;height:8px;background:#e0eaf8;border-radius:4px;margin:0 10px;overflow:hidden;">
+                                            <div id="splitMetaTool" style="width:40%;height:100%;background:#1877F2;border-radius:4px;"></div>
+                                        </div>
+                                        <span id="splitMetaValTool" style="font-weight:700; color: var(--dark);">$2,000</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2" style="font-size:12px;">
+                                        <span style="color:#EA4335; font-weight: 600;"><i class="fab fa-google"></i> Google</span>
+                                        <div style="flex:1;height:8px;background:#e0eaf8;border-radius:4px;margin:0 10px;overflow:hidden;">
+                                            <div id="splitGoogleTool" style="width:30%;height:100%;background:#EA4335;border-radius:4px;"></div>
+                                        </div>
+                                        <span id="splitGoogleValTool" style="font-weight:700; color: var(--dark);">$1,500</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2" style="font-size:12px;">
+                                        <span style="color:#000; font-weight: 600;"><i class="fab fa-tiktok"></i> TikTok</span>
+                                        <div style="flex:1;height:8px;background:#e0eaf8;border-radius:4px;margin:0 10px;overflow:hidden;">
+                                            <div id="splitTiktokTool" style="width:20%;height:100%;background:#010101;border-radius:4px;"></div>
+                                        </div>
+                                        <span id="splitTiktokValTool" style="font-weight:700; color: var(--dark);">$1,000</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center" style="font-size:12px;">
+                                        <span style="color:#0A66C2; font-weight: 600;"><i class="fab fa-linkedin-in"></i> LinkedIn</span>
+                                        <div style="flex:1;height:8px;background:#e0eaf8;border-radius:4px;margin:0 10px;overflow:hidden;">
+                                            <div id="splitLinkedinTool" style="width:10%;height:100%;background:#0A66C2;border-radius:4px;"></div>
+                                        </div>
+                                        <span id="splitLinkedinValTool" style="font-weight:700; color: var(--dark);">$500</span>
+                                    </div>
+                                </div>
+                                <div style="font-size:10px;color:#667;margin-top:10px; text-align: center;"><i class="fas fa-lightbulb"></i> Optimal split for e-commerce</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 7: Conversion Rate Optimizer -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-bullseye"></i>
+                                <h5>Conversion Rate Optimizer</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Monthly Visitors</div>
+                                        <input type="number" id="crvVisitors" class="form-control" value="10000" step="100">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Current CR %</div>
+                                        <input type="number" id="crvRate" class="form-control" value="2.5" step="0.1" min="0" max="100">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Current Conversions</div>
+                                    <div class="ts-val orange" id="crvResult">250</div>
+                                    <div class="mt-2" style="font-size:12px;color:#667;">
+                                        At 5% CR: <strong id="crvPotential" style="color:var(--green);">500 conversions</strong>
+                                    </div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" id="crvBar" style="width:50%;background:var(--green);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 8: Ad Fatigue Monitor -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-hourglass-half"></i>
+                                <h5>Ad Fatigue Monitor</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Daily Spend</div>
+                                        <input type="number" id="fatigueSpend" class="form-control" value="200" step="10">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Audience Size</div>
+                                        <select id="fatigueAudience" class="form-control">
+                                            <option value="50000">Small (<50k)</option>
+                                            <option value="250000" selected>Medium (50-500k)</option>
+                                            <option value="2000000">Large (1M+)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <div class="ts-label">Creative Lifespan</div>
+                                    <span class="ts-tag" id="fatigueTag" style="background:#d4edda;color:#155724; font-size: 12px; padding: 5px 12px;">✅ Fresh: ~21 Days</span>
+                                    <div class="ts-bar-wrap mt-3">
+                                        <div class="ts-bar" id="fatigueBar" style="width:30%;background:var(--green);"></div>
+                                    </div>
+                                    <div class="mt-2" style="font-size: 10px; color: #667;">Refresh before frequency hits 3.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 9: Email ROI Calculator -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <h5>Email List ROI Calculator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-7">
+                                        <div class="ts-label">Subscribers</div>
+                                        <input type="number" id="emailSubs" class="form-control" value="5000" step="100">
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="ts-label">Open Rate %</div>
+                                        <input type="number" id="emailOpenRate" class="form-control" value="22" step="1">
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <div class="ts-label">Monthly Revenue Potential</div>
+                                    <div class="ts-val green" id="emailRevenue">$7,500</div>
+                                    <small style="color:#667;">*$1.50/subscriber industry avg.</small>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" style="width:75%;background:var(--green);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- TOOL 10: Influencer Budget Calculator -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-user-check"></i>
+                                <h5>Influencer Budget Fit</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="mb-3">
+                                    <div class="ts-label">Monthly Budget</div>
+                                    <input type="number" id="infBudget" class="form-control" value="3000" step="100">
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex justify-content-between mb-2 p-2" style="background: #f8f9fa; border-radius: 8px;">
+                                        <span style="font-size: 12px; font-weight: 600;">Nano (1k-10k)</span>
+                                        <span class="ts-val orange" id="nanoQty" style="font-size: 16px;">30</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 p-2" style="background: #f8f9fa; border-radius: 8px;">
+                                        <span style="font-size: 12px; font-weight: 600;">Micro (10k-50k)</span>
+                                        <span class="ts-val orange" id="microQty" style="font-size: 16px;">6</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between p-2" style="background: #f8f9fa; border-radius: 8px;">
+                                        <span style="font-size: 12px; font-weight: 600;">Mid (50k-500k)</span>
+                                        <span class="ts-val orange" id="midQty" style="font-size: 16px;">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+                    <!-- 🆕 10 NEW PREMIUM TOOLS -->
+                    <!-- ═══════════════════════════════════════════════════════════ -->
+
+                    <!-- NEW TOOL 1: Instagram Reels Revenue Calculator -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fab fa-instagram"></i>
+                                <h5>Reels Revenue Estimator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="mb-3">
+                                    <div class="ts-label">Avg. Reels Views</div>
+                                    <input type="number" id="reelsViews" class="form-control" value="50000" step="1000">
+                                </div>
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Posts/Month</div>
+                                        <input type="number" id="reelsPosts" class="form-control" value="20" step="1">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Monetization</div>
+                                        <select id="reelsMon" class="form-control">
+                                            <option value="0.01">Bonus Program</option>
+                                            <option value="0.05" selected>Brand Deals</option>
+                                            <option value="0.03">Affiliate</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Est. Monthly Earnings</div>
+                                    <div class="ts-val green" id="reelsEarnings">$5,000</div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" style="width:70%;background:linear-gradient(90deg,#E1306C,#FD1D1D);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 2: YouTube Shorts Monetization -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fab fa-youtube"></i>
+                                <h5>YouTube Shorts Revenue</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Monthly Views</div>
+                                        <input type="number" id="shortsViews" class="form-control" value="1000000" step="10000">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">RPM ($)</div>
+                                        <input type="number" id="shortsRPM" class="form-control" value="0.05" step="0.01">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="ts-label">AdSense</div>
+                                            <div class="ts-val" id="shortsAdsense">$50</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="ts-label">Sponsorships</div>
+                                            <div class="ts-val orange" id="shortsSponsors">$500</div>
+                                        </div>
+                                    </div>
+                                    <div class="ts-bar-wrap mt-3">
+                                        <div class="ts-bar" style="width:80%;background:#FF0000;"></div>
+                                    </div>
+                                    <small style="color:#667;">*1M views = ~$500-1000 potential</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 3: TikTok Shop Profit Calculator -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h5>TikTok Shop Profit Calc</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-2">
+                                    <div class="col-6">
+                                        <div class="ts-label">Product Price ($)</div>
+                                        <input type="number" id="ttshopPrice" class="form-control" value="25" step="1">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Cost ($)</div>
+                                        <input type="number" id="ttshopCost" class="form-control" value="10" step="1">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="ts-label">Monthly Sales</div>
+                                    <input type="number" id="ttshopSales" class="form-control" value="100" step="10">
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Net Monthly Profit</div>
+                                    <div class="ts-val purple" id="ttshopProfit">$1,200</div>
+                                    <div style="font-size:11px;color:#667;margin-top:5px;">
+                                        After TikTok fee (8%) + shipping
+                                    </div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" style="width:75%;background:#010101;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 4: Snapchat Ad Performance -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fab fa-snapchat-ghost"></i>
+                                <h5>Snapchat Ad Estimator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Daily Budget ($)</div>
+                                        <input type="number" id="snapBudget" class="form-control" value="100" step="10">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">CPM ($)</div>
+                                        <input type="number" id="snapCPM" class="form-control" value="8" step="0.5">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="ts-label">Daily Reach</div>
+                                            <div class="ts-val orange" id="snapReach">12,500</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="ts-label">Swipe-Ups</div>
+                                            <div class="ts-val" id="snapSwipes">625</div>
+                                        </div>
+                                    </div>
+                                    <div class="ts-bar-wrap mt-3">
+                                        <div class="ts-bar" style="width:60%;background:#FFFC00;"></div>
+                                    </div>
+                                    <small style="color:#667;">*5% avg. swipe-up rate</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 5: Pinterest Traffic Estimator -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fab fa-pinterest"></i>
+                                <h5>Pinterest Traffic Calc</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Monthly Pins</div>
+                                        <input type="number" id="pinCount" class="form-control" value="30" step="1">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Avg. Pin Clicks</div>
+                                        <input type="number" id="pinClicks" class="form-control" value="50" step="5">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Monthly Website Traffic</div>
+                                    <div class="ts-val green" id="pinTraffic">1,500</div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" style="width:65%;background:#E60023;"></div>
+                                    </div>
+                                    <div style="font-size:11px;color:#667;margin-top:8px;">
+                                        Pinterest converts 3x better than other platforms
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 6: Podcast Sponsorship Value -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-podcast"></i>
+                                <h5>Podcast Sponsorship Value</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Downloads/Episode</div>
+                                        <input type="number" id="podDownloads" class="form-control" value="5000" step="100">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Episodes/Month</div>
+                                        <input type="number" id="podEpisodes" class="form-control" value="4" step="1">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="ts-label">Pre-Roll ($)</div>
+                                            <div class="ts-val orange" id="podPreroll">$400</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="ts-label">Mid-Roll ($)</div>
+                                            <div class="ts-val" id="podMidroll">$800</div>
+                                        </div>
+                                    </div>
+                                    <div class="ts-bar-wrap mt-3">
+                                        <div class="ts-bar" style="width:70%;background:var(--purple);"></div>
+                                    </div>
+                                    <small style="color:#667;">*CPM: $20-25 industry standard</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 7: Affiliate Commission Calculator -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <h5>Affiliate Earnings Calc</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-2">
+                                    <div class="col-6">
+                                        <div class="ts-label">Monthly Clicks</div>
+                                        <input type="number" id="affClicks" class="form-control" value="1000" step="50">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Conversion %</div>
+                                        <input type="number" id="affConv" class="form-control" value="3" step="0.5">
+                                    </div>
+                                </div>
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Commission %</div>
+                                        <input type="number" id="affRate" class="form-control" value="10" step="1">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Avg. Sale ($)</div>
+                                        <input type="number" id="affSale" class="form-control" value="100" step="5">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Monthly Commission</div>
+                                    <div class="ts-val purple" id="affEarnings">$300</div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" id="affBar" style="width:60%;background:var(--purple);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 8: Webinar Attendance Predictor -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-users-class"></i>
+                                <h5>Webinar Attendance Rate</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Registrations</div>
+                                        <input type="number" id="webReg" class="form-control" value="500" step="10">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Type</div>
+                                        <select id="webType" class="form-control">
+                                            <option value="35">Free Webinar</option>
+                                            <option value="60">Paid Webinar</option>
+                                            <option value="45">Invite-Only</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Expected Attendees</div>
+                                    <div class="ts-val orange" id="webAttendees">175</div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" id="webBar" style="width:35%;background:var(--orange);"></div>
+                                    </div>
+                                    <div style="font-size:11px;color:#667;margin-top:8px;">
+                                        Attendance Rate: <strong id="webRate">35%</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 9: Twitter/X Thread Reach -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fab fa-x-twitter"></i>
+                                <h5>X Thread Reach Calculator</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="ts-label">Followers</div>
+                                        <input type="number" id="xFollowers" class="form-control" value="10000" step="100">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Thread Quality</div>
+                                        <select id="xQuality" class="form-control">
+                                            <option value="5">Average</option>
+                                            <option value="15" selected>Viral Potential</option>
+                                            <option value="25">Trending Topic</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Expected Impressions</div>
+                                    <div class="ts-val" id="xImpressions">150,000</div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" style="width:75%;background:#000;"></div>
+                                    </div>
+                                    <div style="font-size:11px;color:#667;margin-top:8px;">
+                                        Engagement: <strong id="xEngagement">4,500</strong> likes/RTs
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW TOOL 10: Live Stream Revenue Predictor -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="tool-card">
+                            <div class="tool-card-header">
+                                <i class="fas fa-video"></i>
+                                <h5>Live Stream Earnings</h5>
+                            </div>
+                            <div class="tool-card-body">
+                                <div class="row g-2 mb-2">
+                                    <div class="col-6">
+                                        <div class="ts-label">Avg. Viewers</div>
+                                        <input type="number" id="liveViewers" class="form-control" value="500" step="10">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="ts-label">Stream Hours/Mo</div>
+                                        <input type="number" id="liveHours" class="form-control" value="20" step="1">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="ts-label">Platform</div>
+                                    <select id="livePlatform" class="form-control">
+                                        <option value="3">Twitch</option>
+                                        <option value="2">YouTube Live</option>
+                                        <option value="5">TikTok Live</option>
+                                        <option value="1.5">Facebook Live</option>
+                                    </select>
+                                </div>
+                                <div class="text-center">
+                                    <div class="ts-label">Est. Monthly Earnings</div>
+                                    <div class="ts-val green" id="liveEarnings">$3,000</div>
+                                    <div class="ts-bar-wrap mt-2">
+                                        <div class="ts-bar" style="width:70%;background:var(--purple);"></div>
+                                    </div>
+                                    <small style="color:#667;">From ads, subs, donations & gifts</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ✅ FIXED CTA BANNER - Edge to Edge with Blue/Orange Theme -->
+                <div class="cta-banner-wrapper wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="cta-banner">
+                        <h2>Ready to Scale Your Business?</h2>
+                        <p>Join 10,000+ agencies & brands using Adswibe® to crush their marketing goals. Get a free custom proposal within 24 hours — no strings attached.</p>
+                        <a href="request.html" class="btn-white">Get My Free Proposal 🚀</a>
+                        
+                        <div class="cta-stats">
+                            <div class="cta-stat">
+                                <span class="cta-stat-number">$2.5M+</span>
+                                <span class="cta-stat-label">Ad Spend Managed</span>
+                            </div>
+                            <div class="cta-stat">
+                                <span class="cta-stat-number">150+</span>
+                                <span class="cta-stat-label">Active Clients</span>
+                            </div>
+                            <div class="cta-stat">
+                                <span class="cta-stat-number">4.8x</span>
+                                <span class="cta-stat-label">Avg. ROAS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- ✅ ORIGINAL FOOTER (Unchanged) -->
+    <footer class="footer-adswibe">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/logo.webp" alt="Adswibe®"></a>
+                </div>
+                <p class="footer-tagline">Premium Social Media Marketing Agency &mdash; Scaling brands globally via Meta, TikTok, Google, LinkedIn &amp; more.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/adswibe" target="_blank" rel="noopener" title="Facebook" class="fs-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/adswibe.pk" target="_blank" rel="noopener" title="Instagram" class="fs-ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/adswibe" target="_blank" rel="noopener" title="X / Twitter" class="fs-x"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/adswibe" target="_blank" rel="noopener" title="LinkedIn" class="fs-li"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.tiktok.com/@adswibe.pk" target="_blank" rel="noopener" title="TikTok" class="fs-tt"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@adswibe" target="_blank" rel="noopener" title="YouTube" class="fs-yt"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://wa.me/923316290097" target="_blank" rel="noopener" title="WhatsApp" class="fs-wa"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-policy-line">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span class="footer-policy-sep">|</span>
+                    <a href="terms.html">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="container">
+            <div class="footer-bottom-simple">
+                <p class="footer-copy">&copy; 2026 Adswibe Private Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+
+    <script>
+    // ═══════════════════════════════════════════════════════════
+    // ALL 40+ TOOLS - FULLY FUNCTIONAL JAVASCRIPT
+    // ═══════════════════════════════════════════════════════════
+
+    // TOOL 1: Smart ROI Estimator
+    var budgetRangeTool = document.getElementById('budgetRangeTool');
+    function updateSideROI() {
+        var b = parseInt(budgetRangeTool.value);
+        var roas = Math.min(8, 3.5 + (b / 50000) * 3).toFixed(1);
+        var rev = Math.round(b * parseFloat(roas));
+        document.getElementById('budgetAmountTool').innerText = '$' + b.toLocaleString();
+        document.getElementById('estRevenueTool').innerText = '$' + rev.toLocaleString();
+        document.getElementById('estRoasTool').innerText = roas + 'x';
+    }
+    budgetRangeTool.addEventListener('input', updateSideROI);
+    updateSideROI();
+
+    // TOOL 2: Engagement Rate Checker
+    function updateEngagement() {
+        var followers = parseFloat(document.getElementById('engFollowers').value) || 10000;
+        var interactions = parseFloat(document.getElementById('engInteractions').value) || 450;
+        var rate = (interactions / followers) * 100;
+        var displayRate = rate.toFixed(2);
+        
+        var rateSpan = document.querySelector('#engRateValue span');
+        rateSpan.innerText = displayRate;
+        rateSpan.style.color = rate >= 3.5 ? '#28a745' : (rate >= 1.5 ? 'var(--blue)' : '#dc3545');
+        
+        var tag = document.getElementById('engRateTag');
+        if (rate >= 3.5) {
+            tag.innerText = 'Excellent ★';
+            tag.style.background = '#d4edda';
+            tag.style.color = '#155724';
+        } else if (rate >= 1.5) {
+            tag.innerText = 'Good ●';
+            tag.style.background = '#fff3cd';
+            tag.style.color = '#856404';
+        } else {
+            tag.innerText = 'Needs Work ○';
+            tag.style.background = '#f8d7da';
+            tag.style.color = '#721c24';
+        }
+    }
+    document.getElementById('engPlatform').addEventListener('change', updateEngagement);
+    document.getElementById('engFollowers').addEventListener('input', updateEngagement);
+    document.getElementById('engInteractions').addEventListener('input', updateEngagement);
+    updateEngagement();
+
+    // TOOL 3: CPC & Budget Calculator
+    function updateCPC() {
+        var cpc = parseFloat(document.getElementById('cpcIndustry').value);
+        var budget = parseFloat(document.getElementById('cpcBudget').value) || 50;
+        var clicks = Math.floor(budget / cpc);
+        var leads = (clicks * 0.03).toFixed(1);
+        var barWidth = Math.min(100, (clicks / 100) * 100);
+        
+        document.getElementById('cpcValue').innerText = '$' + cpc.toFixed(2);
+        document.getElementById('cpcClicks').innerText = clicks;
+        document.getElementById('cpcLeads').innerText = leads;
+        document.getElementById('cpcBar').style.width = barWidth + '%';
+    }
+    document.getElementById('cpcIndustry').addEventListener('change', updateCPC);
+    document.getElementById('cpcBudget').addEventListener('input', updateCPC);
+    updateCPC();
+
+    // TOOL 4: Audience Reach Estimator
+    var audData = {
+        '25–34': { 'Global':250000000, 'United States':45000000, 'Pakistan':58000000, 'India':250000000, 'United Kingdom':9500000, 'Canada':5800000 }
+    };
+    var compData = {
+        '25–34': { 'Global':85, 'United States':92, 'Pakistan':70, 'India':85, 'United Kingdom':90, 'Canada':88 }
+    };
+    
+    function fmtAud(n) { return n >= 1000000 ? (n/1000000).toFixed(1)+'M' : Math.round(n/1000)+'K'; }
+    function updateAudience() {
+        var age = document.getElementById('audAgeTool').value;
+        var loc = document.getElementById('audLocTool').value;
+        var sz  = (audData[age] && audData[age][loc]) ? audData[age][loc] : 5000000;
+        var cp  = (compData[age] && compData[age][loc]) ? compData[age][loc] : 55;
+        document.getElementById('audSizeTool').innerText = fmtAud(sz);
+        var bar = document.getElementById('compBarTool');
+        bar.style.width = cp + '%';
+        bar.style.background = cp > 70 ? 'linear-gradient(90deg,#dc3545,#e07b00)'
+            : cp > 45 ? 'linear-gradient(90deg,#FF835F,#ffb347)'
+            : 'linear-gradient(90deg,#28a745,#5cb85c)';
+        var tag = document.getElementById('compTagTool');
+        tag.innerText = cp > 70 ? 'High' : cp > 45 ? 'Medium' : 'Low';
+        tag.className = 'ts-tag ' + (cp > 70 ? 'tag-high' : cp > 45 ? 'tag-med' : 'tag-low');
+    }
+    document.getElementById('audAgeTool').addEventListener('change', updateAudience);
+    document.getElementById('audLocTool').addEventListener('change', updateAudience);
+    updateAudience();
+
+    // TOOL 5: ROAS Calculator
+    function updateROAS() {
+        var spend = parseFloat(document.getElementById('roasSpend').value) || 0;
+        var rev = parseFloat(document.getElementById('roasRevenue').value) || 0;
+        var roas = spend > 0 ? (rev / spend).toFixed(2) : 0;
+        document.getElementById('roasResult').innerHTML = roas + '<span style="font-size:18px;">x</span>';
+        var tag = document.getElementById('roasTag');
+        if(roas >= 4) { 
+            tag.style.background='#d4edda'; 
+            tag.style.color='#155724'; 
+            tag.innerText='🚀 Profitable'; 
+        } else if(roas >= 1) { 
+            tag.style.background='#fff3cd'; 
+            tag.style.color='#856404'; 
+            tag.innerText='⚠️ Break-even'; 
+        } else { 
+            tag.style.background='#f8d7da'; 
+            tag.style.color='#721c24'; 
+            tag.innerText='❌ Losing Money'; 
+        }
+    }
+    document.getElementById('roasSpend').addEventListener('input', updateROAS);
+    document.getElementById('roasRevenue').addEventListener('input', updateROAS);
+    updateROAS();
+
+    // TOOL 6: Budget Splitter
+    function updateSplitter() {
+        var b = parseInt(document.getElementById('splitSliderTool').value);
+        document.getElementById('splitBudgetLabelTool').innerText = '$' + b.toLocaleString();
+        var meta     = Math.round(b * 0.40);
+        var google   = Math.round(b * 0.30);
+        var tiktok   = Math.round(b * 0.20);
+        var linkedin = Math.round(b * 0.10);
+        document.getElementById('splitMetaValTool').innerText    = '$' + meta.toLocaleString();
+        document.getElementById('splitGoogleValTool').innerText  = '$' + google.toLocaleString();
+        document.getElementById('splitTiktokValTool').innerText  = '$' + tiktok.toLocaleString();
+        document.getElementById('splitLinkedinValTool').innerText= '$' + linkedin.toLocaleString();
+    }
+    document.getElementById('splitSliderTool').addEventListener('input', updateSplitter);
+    updateSplitter();
+
+    // TOOL 7: Conversion Rate Optimizer
+    function updateCRO() {
+        var visitors = parseFloat(document.getElementById('crvVisitors').value) || 10000;
+        var rate = parseFloat(document.getElementById('crvRate').value) || 2.5;
+        var conversions = Math.floor(visitors * (rate/100));
+        var potential = Math.floor(visitors * 0.05);
+        var barWidth = (rate / 5) * 100;
+        document.getElementById('crvResult').innerText = conversions.toLocaleString();
+        document.getElementById('crvPotential').innerText = potential.toLocaleString() + ' conversions';
+        document.getElementById('crvBar').style.width = Math.min(100, barWidth) + '%';
+    }
+    document.getElementById('crvVisitors').addEventListener('input', updateCRO);
+    document.getElementById('crvRate').addEventListener('input', updateCRO);
+    updateCRO();
+
+    // TOOL 8: Ad Fatigue Monitor
+    function updateFatigue() {
+        var spend = parseFloat(document.getElementById('fatigueSpend').value) || 200;
+        var audience = parseFloat(document.getElementById('fatigueAudience').value) || 250000;
+        var daysLeft = Math.floor(audience / (spend * 50));
+        var tag = document.getElementById('fatigueTag');
+        var bar = document.getElementById('fatigueBar');
+        
+        if(daysLeft > 20) {
+            tag.style.background='#d4edda';
+            tag.style.color='#155724';
+            tag.innerText = '✅ Fresh: ~' + daysLeft + ' Days';
+            bar.style.width = '30%';
+            bar.style.background = 'var(--green)';
+        } else if(daysLeft > 10) {
+            tag.style.background='#fff3cd';
+            tag.style.color='#856404';
+            tag.innerText = '⚠️ Monitor: ~' + daysLeft + ' Days';
+            bar.style.width = '60%';
+            bar.style.background = '#ffc107';
+        } else {
+            tag.style.background='#f8d7da';
+            tag.style.color='#721c24';
+            tag.innerText = '🔴 Refresh Now! ~' + daysLeft + ' Days';
+            bar.style.width = '90%';
+            bar.style.background = '#dc3545';
+        }
+    }
+    document.getElementById('fatigueSpend').addEventListener('input', updateFatigue);
+    document.getElementById('fatigueAudience').addEventListener('change', updateFatigue);
+    updateFatigue();
+
+    // TOOL 9: Email ROI Calculator
+    function updateEmailROI() {
+        var subs = parseFloat(document.getElementById('emailSubs').value) || 5000;
+        var rev = (subs * 1.5).toFixed(0);
+        document.getElementById('emailRevenue').innerText = '$' + Number(rev).toLocaleString();
+    }
+    document.getElementById('emailSubs').addEventListener('input', updateEmailROI);
+    document.getElementById('emailOpenRate').addEventListener('input', updateEmailROI);
+    updateEmailROI();
+
+    // TOOL 10: Influencer Budget Calculator
+    function updateInfBudget() {
+        var budget = parseFloat(document.getElementById('infBudget').value) || 3000;
+        document.getElementById('nanoQty').innerText = Math.floor(budget / 100);
+        document.getElementById('microQty').innerText = Math.floor(budget / 500);
+        document.getElementById('midQty').innerText = Math.floor(budget / 2500);
+    }
+    document.getElementById('infBudget').addEventListener('input', updateInfBudget);
+    updateInfBudget();
+
+    // NEW TOOL 1: Instagram Reels Revenue
+    function updateReels() {
+        var views = parseFloat(document.getElementById('reelsViews').value) || 50000;
+        var posts = parseFloat(document.getElementById('reelsPosts').value) || 20;
+        var rate = parseFloat(document.getElementById('reelsMon').value) || 0.05;
+        var earnings = Math.floor(views * posts * rate);
+        document.getElementById('reelsEarnings').innerText = '$' + earnings.toLocaleString();
+    }
+    document.getElementById('reelsViews').addEventListener('input', updateReels);
+    document.getElementById('reelsPosts').addEventListener('input', updateReels);
+    document.getElementById('reelsMon').addEventListener('change', updateReels);
+    updateReels();
+
+    // NEW TOOL 2: YouTube Shorts
+    function updateShorts() {
+        var views = parseFloat(document.getElementById('shortsViews').value) || 1000000;
+        var rpm = parseFloat(document.getElementById('shortsRPM').value) || 0.05;
+        var adsense = Math.floor((views / 1000) * rpm);
+        var sponsors = adsense * 10;
+        document.getElementById('shortsAdsense').innerText = '$' + adsense.toLocaleString();
+        document.getElementById('shortsSponsors').innerText = '$' + sponsors.toLocaleString();
+    }
+    document.getElementById('shortsViews').addEventListener('input', updateShorts);
+    document.getElementById('shortsRPM').addEventListener('input', updateShorts);
+    updateShorts();
+
+    // NEW TOOL 3: TikTok Shop Profit
+    function updateTTShop() {
+        var price = parseFloat(document.getElementById('ttshopPrice').value) || 25;
+        var cost = parseFloat(document.getElementById('ttshopCost').value) || 10;
+        var sales = parseFloat(document.getElementById('ttshopSales').value) || 100;
+        var revenue = price * sales;
+        var totalCost = cost * sales;
+        var fee = revenue * 0.08;
+        var shipping = sales * 3;
+        var profit = revenue - totalCost - fee - shipping;
+        document.getElementById('ttshopProfit').innerText = '$' + Math.floor(profit).toLocaleString();
+    }
+    document.getElementById('ttshopPrice').addEventListener('input', updateTTShop);
+    document.getElementById('ttshopCost').addEventListener('input', updateTTShop);
+    document.getElementById('ttshopSales').addEventListener('input', updateTTShop);
+    updateTTShop();
+
+    // NEW TOOL 4: Snapchat Ads
+    function updateSnap() {
+        var budget = parseFloat(document.getElementById('snapBudget').value) || 100;
+        var cpm = parseFloat(document.getElementById('snapCPM').value) || 8;
+        var reach = Math.floor((budget / cpm) * 1000);
+        var swipes = Math.floor(reach * 0.05);
+        document.getElementById('snapReach').innerText = reach.toLocaleString();
+        document.getElementById('snapSwipes').innerText = swipes.toLocaleString();
+    }
+    document.getElementById('snapBudget').addEventListener('input', updateSnap);
+    document.getElementById('snapCPM').addEventListener('input', updateSnap);
+    updateSnap();
+
+    // NEW TOOL 5: Pinterest Traffic
+    function updatePin() {
+        var pins = parseFloat(document.getElementById('pinCount').value) || 30;
+        var clicks = parseFloat(document.getElementById('pinClicks').value) || 50;
+        var traffic = pins * clicks;
+        document.getElementById('pinTraffic').innerText = traffic.toLocaleString();
+    }
+    document.getElementById('pinCount').addEventListener('input', updatePin);
+    document.getElementById('pinClicks').addEventListener('input', updatePin);
+    updatePin();
+
+    // NEW TOOL 6: Podcast Sponsorship
+    function updatePod() {
+        var downloads = parseFloat(document.getElementById('podDownloads').value) || 5000;
+        var episodes = parseFloat(document.getElementById('podEpisodes').value) || 4;
+        var preroll = Math.floor((downloads * episodes * 20) / 1000);
+        var midroll = preroll * 2;
+        document.getElementById('podPreroll').innerText = '$' + preroll.toLocaleString();
+        document.getElementById('podMidroll').innerText = '$' + midroll.toLocaleString();
+    }
+    document.getElementById('podDownloads').addEventListener('input', updatePod);
+    document.getElementById('podEpisodes').addEventListener('input', updatePod);
+    updatePod();
+
+    // NEW TOOL 7: Affiliate Calculator
+    function updateAff() {
+        var clicks = parseFloat(document.getElementById('affClicks').value) || 1000;
+        var conv = parseFloat(document.getElementById('affConv').value) || 3;
+        var rate = parseFloat(document.getElementById('affRate').value) || 10;
+        var sale = parseFloat(document.getElementById('affSale').value) || 100;
+        var conversions = Math.floor(clicks * (conv / 100));
+        var earnings = Math.floor(conversions * sale * (rate / 100));
+        document.getElementById('affEarnings').innerText = '$' + earnings.toLocaleString();
+        var barWidth = Math.min(100, (conv / 10) * 100);
+        document.getElementById('affBar').style.width = barWidth + '%';
+    }
+    document.getElementById('affClicks').addEventListener('input', updateAff);
+    document.getElementById('affConv').addEventListener('input', updateAff);
+    document.getElementById('affRate').addEventListener('input', updateAff);
+    document.getElementById('affSale').addEventListener('input', updateAff);
+    updateAff();
+
+    // NEW TOOL 8: Webinar Attendance
+    function updateWeb() {
+        var reg = parseFloat(document.getElementById('webReg').value) || 500;
+        var rateVal = parseFloat(document.getElementById('webType').value) || 35;
+        var attendees = Math.floor(reg * (rateVal / 100));
+        document.getElementById('webAttendees').innerText = attendees.toLocaleString();
+        document.getElementById('webRate').innerText = rateVal + '%';
+        document.getElementById('webBar').style.width = rateVal + '%';
+    }
+    document.getElementById('webReg').addEventListener('input', updateWeb);
+    document.getElementById('webType').addEventListener('change', updateWeb);
+    updateWeb();
+
+    // NEW TOOL 9: X Thread Reach
+    function updateX() {
+        var followers = parseFloat(document.getElementById('xFollowers').value) || 10000;
+        var quality = parseFloat(document.getElementById('xQuality').value) || 15;
+        var impressions = Math.floor(followers * quality);
+        var engagement = Math.floor(impressions * 0.03);
+        document.getElementById('xImpressions').innerText = impressions.toLocaleString();
+        document.getElementById('xEngagement').innerText = engagement.toLocaleString();
+    }
+    document.getElementById('xFollowers').addEventListener('input', updateX);
+    document.getElementById('xQuality').addEventListener('change', updateX);
+    updateX();
+
+    // NEW TOOL 10: Live Stream Earnings
+    function updateLive() {
+        var viewers = parseFloat(document.getElementById('liveViewers').value) || 500;
+        var hours = parseFloat(document.getElementById('liveHours').value) || 20;
+        var rate = parseFloat(document.getElementById('livePlatform').value) || 3;
+        var earnings = Math.floor(viewers * hours * rate);
+        document.getElementById('liveEarnings').innerText = '$' + earnings.toLocaleString();
+    }
+    document.getElementById('liveViewers').addEventListener('input', updateLive);
+    document.getElementById('liveHours').addEventListener('input', updateLive);
+    document.getElementById('livePlatform').addEventListener('change', updateLive);
+    updateLive();
+
+    // Header shadow on scroll
+    var h = document.querySelector('header');
+    window.addEventListener('scroll', function(){ 
+        if(h){ 
+            window.scrollY > 50 ? h.classList.add('scrolled-shadow') : h.classList.remove('scrolled-shadow'); 
+        } 
+    });
+    </script>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div id="page-preloader">
+        <img src="images/logo.webp" alt="Adswibe®" class="preloader-logo">
+        <div class="preloader-ring"></div>
+    </div>
+    <a id="wa-float-btn" href="https://wa.me/923316290097?text=Hi%20Adswibe!%20I%20need%20social%20media%20marketing%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <span class="wa-float-label">Live</span>
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    </div>
+</div>
+
+<!-- ═══ SHARE FLOAT — MID LEFT ═══ -->
+<div id="share-float-wrap">
+  <button id="share-float-btn" aria-label="Share on social media">
+    <i class="fa-solid fa-share-nodes sf-icon"></i>
+    <span class="sf-text">Share</span>
+  </button>
+  <div id="share-float-circles">
+    <a class="sf-circle sf-fb" href="https://www.facebook.com/adswibe" target="_blank" rel="noopener" data-label="Facebook" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a class="sf-circle sf-ig" href="https://www.instagram.com/adswibe.pk" target="_blank" rel="noopener" data-label="Instagram" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a class="sf-circle sf-x" href="https://x.com/adswibe" target="_blank" rel="noopener" data-label="X / Twitter" aria-label="X / Twitter">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a class="sf-circle sf-li" href="https://www.linkedin.com/company/adswibe" target="_blank" rel="noopener" data-label="LinkedIn" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a class="sf-circle sf-tt" href="https://www.tiktok.com/@adswibe.pk" target="_blank" rel="noopener" data-label="TikTok" aria-label="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a class="sf-circle sf-yt" href="https://www.youtube.com/@adswibe" target="_blank" rel="noopener" data-label="YouTube" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a class="sf-circle sf-wa" href="https://wa.me/923316290097?text=Hi%20Adswibe!%20I%20have%20a%20question." target="_blank" rel="noopener" data-label="WhatsApp" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
+<script src="js/enhancements.js"></script>
+</body>
+</html>

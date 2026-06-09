@@ -1,0 +1,10 @@
+{
+    "name": "adswibe/website",
+    "description": "Adswibe® Website Backend",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
