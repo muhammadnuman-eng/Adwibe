@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://adswibe.com/</loc>
+    <image:image>
+      <image:loc>https://adswibe.com/images/og-image.webp</image:loc>
+      <image:title>Adswibe® — Premium Social Media Marketing Agency</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://adswibe.com/images/logo.webp</image:loc>
+      <image:title>Adswibe® Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://adswibe.com/clients.html</loc>
+    <image:image>
+      <image:loc>https://adswibe.com/images/projects/p1.png</image:loc>
+      <image:title>Client Campaign Results — Adswibe®</image:title>
+    </image:image>
+  </url>
+</urlset>
