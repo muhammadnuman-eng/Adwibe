@@ -1,0 +1,38 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Composer
+composer.lock
+
+# Environment & config files
+.env
+.env.local
+.env.*.local
+config.local.php
+*.local.php
+
+# PHP logs & cache
+*.log
+/logs/
+/cache/
+/tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Uploaded files
+/uploads/
+/media/
+
+# Compiled assets
+*.min.js.map
+*.min.css.map
