@@ -1214,9 +1214,22 @@ header {
     bottom: calc(10px + env(safe-area-inset-bottom)) !important;
   }
 
-  /* Share float: hide on tiny screens to avoid clutter */
+  /* Share float: compact on tiny screens */
   #share-float-wrap {
-    display: none !important;
+    display: flex !important;
+    visibility: visible !important;
+  }
+  #share-float-btn {
+    width: 26px !important;
+    min-height: 60px !important;
+    padding: 10px 0 !important;
+  }
+  #share-float-btn .sf-text {
+    font-size: 7px !important;
+    letter-spacing: 1.2px !important;
+  }
+  #share-float-btn .sf-icon {
+    font-size: 12px !important;
   }
 
   /* Budget button */

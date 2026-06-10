@@ -201,42 +201,58 @@
   })();
 
   /* ══════════════════════════════════════════════
-     4. MOBILE MENU — hamburger toggle
-     Works with theme's #menu-btn and body.menu-opened
+     4. MOBILE SIDE DRAWER
      ══════════════════════════════════════════════ */
   (function() {
-    var menuBtn = document.getElementById('menu-btn');
-    if (!menuBtn) return;
+    var menuBtn  = document.getElementById('menu-btn');
+    var drawer   = document.getElementById('mob-nav-drawer');
+    var overlay  = document.getElementById('mob-nav-overlay');
+    var closeBtn = document.getElementById('mob-nav-close');
+    if (!menuBtn || !drawer || !overlay) return;
 
-    /* Ensure menu-btn has 3 spans for the animated hamburger */
-    if (!menuBtn.querySelector('span')) {
-      menuBtn.innerHTML = '<span></span><span></span><span></span>';
-    }
+    function preventScroll(e) { e.preventDefault(); }
 
-    menuBtn.addEventListener('click', function(e) {
-      e.stopPropagation();
-      document.body.classList.toggle('menu-opened');
-    });
-
-    /* Close menu when clicking outside */
-    document.addEventListener('click', function(e) {
-      var mainmenu = document.getElementById('mainmenu');
-      if (document.body.classList.contains('menu-opened')) {
-        if (!menuBtn.contains(e.target) && mainmenu && !mainmenu.contains(e.target)) {
-          document.body.classList.remove('menu-opened');
-        }
+    function resetHeader() {
+      var hdr = document.querySelector('header');
+      if (hdr) {
+        hdr.style.height = 'auto';
+        hdr.style.overflow = '';
+        hdr.classList.remove('menu-open');
       }
+    }
+
+    function openDrawer() {
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+      resetHeader();
+      overlay.addEventListener('touchmove', preventScroll, { passive: false });
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+      resetHeader();
+      overlay.removeEventListener('touchmove', preventScroll);
+    }
+
+    function handleMenuBtn(e) {
+      e.stopPropagation();
+      drawer.classList.contains('open') ? closeDrawer() : openDrawer();
+    }
+
+    /* Wait for window load so designesia.js $(document).ready has run and
+       registered its #menu-btn handler. Then replace it with ours. */
+    window.addEventListener('load', function() {
+      if (window.jQuery) jQuery('#menu-btn').off('click');
+      menuBtn.addEventListener('click', handleMenuBtn);
     });
 
-    /* Close menu on link click */
-    var mainmenu = document.getElementById('mainmenu');
-    if (mainmenu) {
-      mainmenu.querySelectorAll('a').forEach(function(link) {
-        link.addEventListener('click', function() {
-          document.body.classList.remove('menu-opened');
-        });
-      });
-    }
+    overlay.addEventListener('click', closeDrawer);
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', closeDrawer);
+    });
   })();
 
   /* ══════════════════════════════════════════════

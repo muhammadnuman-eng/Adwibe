@@ -273,12 +273,6 @@ header.sticky .logo-scroll {
 header.sticky .logo-main {
   display: none;
 }
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
 
 header .logo-2 {
   display: none;
@@ -328,7 +322,7 @@ header.smaller {
   -o-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: none;*/
+  border: none;
 }
 
 header.header-mobile.header-float .header-inner,
@@ -6809,7 +6803,8 @@ footer .widget{
   border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags li a:hover {
+  border-color: #eceff3;
 }
 
 footer .widget {
@@ -13559,4 +13554,83 @@ section {
 
 .rounded-1 {
     border-radius: 0 !important;
+}
+/* ===== MOBILE SIDE DRAWER ===== */
+#mob-nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 19998;
+    backdrop-filter: blur(2px);
+}
+#mob-nav-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    max-width: 85vw;
+    height: 100%;
+    background: #fff;
+    z-index: 19999;
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.4,0,0.2,1);
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px 32px;
+    box-shadow: -6px 0 30px rgba(0,0,0,0.15);
+    overflow-y: auto;
+}
+#mob-nav-drawer.open {
+    transform: translateX(0);
+}
+#mob-nav-overlay.open {
+    display: block;
+}
+#mob-nav-close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+    padding: 0;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+#mob-nav-logo {
+    margin-bottom: 28px;
+}
+#mob-nav-logo img {
+    height: 40px;
+    width: auto;
+}
+#mob-nav-links {
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+    flex: 1;
+}
+#mob-nav-links li {
+    border-bottom: 1px solid #f0f0f0;
+}
+#mob-nav-links li a {
+    display: block;
+    padding: 14px 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+#mob-nav-links li a:hover {
+    color: #1877F2;
+}
+#mob-nav-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (min-width: 993px) {
+    #mob-nav-drawer, #mob-nav-overlay { display: none !important; }
 }
